@@ -36,6 +36,11 @@
   --text-16: 16px;
 }
 
+/* all button should have cursor pointer */
+button {
+  cursor: pointer;
+}
+
 /* =========================================
    MOBILE
 ========================================= */
