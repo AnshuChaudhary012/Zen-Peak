@@ -249,6 +249,9 @@
   .-z-10 {
     z-index: calc(10 * -1);
   }
+  .z-0 {
+    z-index: 0;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -458,6 +461,11 @@
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .-translate-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
@@ -973,6 +981,11 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -989,8 +1002,14 @@
     will-change: transform;
   }
   @media (hover: hover) {
+    .group-hover\:h-40:is(:where(.group):hover *) {
+      height: calc(var(--spacing) * 40);
+    }
     .group-hover\:h-45:is(:where(.group):hover *) {
       height: calc(var(--spacing) * 45);
+    }
+    .group-hover\:w-40:is(:where(.group):hover *) {
+      width: calc(var(--spacing) * 40);
     }
     .group-hover\:w-53:is(:where(.group):hover *) {
       width: calc(var(--spacing) * 53);
@@ -998,14 +1017,20 @@
     .group-hover\:text-brown:is(:where(.group):hover *) {
       color: var(--color-brown);
     }
+    .group-hover\:text-white:is(:where(.group):hover *) {
+      color: var(--color-white);
+    }
+    .hover\:h-40:hover {
+      height: calc(var(--spacing) * 40);
+    }
+    .hover\:w-40:hover {
+      width: calc(var(--spacing) * 40);
+    }
     .hover\:scale-110:hover {
       --tw-scale-x: 110%;
       --tw-scale-y: 110%;
       --tw-scale-z: 110%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-    .hover\:bg-white:hover {
-      background-color: var(--color-white);
     }
     .hover\:text-brown:hover {
       color: var(--color-brown);
