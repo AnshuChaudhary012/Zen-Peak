@@ -7,48 +7,49 @@
     <title>Zen Peak</title>
     <link rel="icon" href="assets/images/png/logo.ico">
     <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
 </head>
 
-<body>
+<body class="bg-[#F7F3F0]">
+    <!-- first section -->
     <section>
         <div class="bg-[#DFBCA6]">
             <div class="pt-24.75 pb-9.25 max-sm:pb-18.75 max-w-268 px-5 mx-auto max-sm:pt-14.25">
                 <a href="#">
                     <img width="480" height="99" src="assets/images/svg/logo.svg" alt="logo"
-                        class="flex mx-auto max-sm:w-62.5">
+                        class="flex mx-auto max-sm:w-60">
                 </a>
                 <h1
-                    class="italic pt-[28.92px] pb-10 max-sm:pt-10.25 max-sm:pb-15.25 font-light text-[75px] text-white text-center leading-130 max-sm:text-[43px]">
+                    class="  animate__animated animate__backInDown italic mt-[28.92px] mb-10 max-sm:mt-10.25 max-sm:pm-15.25 font-light text-[75px] text-white text-center leading-130 max-sm:text-[43px] max-sm:mb-15.25">
                     Exploring
-                    <span class="font-bold">Crypto and Primary</span> Market Strategies
+                    <span class="font-bold">Crypto and Primary</span>
+                    <span  class="max-sm:text-nowrap">Market Strategies</span>
                 </h1>
-                <button class="group relative mx-auto flex max-sm:w-full max-sm:justify-center
-         rounded-full border border-white px-12.5 py-6.25
-         text-xl font-medium leading-100 text-white
-         duration-300 max-sm:py-5 overflow-hidden">
-                    <span class="absolute left-1/2 top-1/2 h-0 w-0
-           -translate-x-1/2 -translate-y-1/2
-           rounded-full bg-white
-           transition-all duration-500 ease-out
-           group-hover:h-45 group-hover:w-53"></span>
-                    <span class="relative z-10 transition-colors duration-300 group-hover:text-brown">
+                <button
+                    class="group relative mx-auto h-18.25 flex max-sm:justify-center rounded-full border border-white w-50.25 text-xl font-medium leading-100 text-white duration-300 max-sm:py-5 overflow-hidden max-sm:w-82.5 max-sm:h-15.75">
+                    <span
+                        class="absolute left-1/2 top-1/2 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white transition-all duration-500 ease-out group-hover:h-150 group-hover:w-150"></span>
+                    <span class="relative z-10 mx-auto transition-colors duration-500 my-auto group-hover:text-brown">
                         Connect Us
                     </span>
                 </button>
             </div>
-            <img width="1440" height="567" src="assets/images/png/mountain.png" alt="mountain"
-                class="-mb-px mx-auto max-sm:h-79.5 max-sm:object-cover">
+            <img width="1440" height="567" src="assets/images/svg/mountian.webp" alt="mountain"
+                class="mx-auto max-sm:h-79.5 max-sm:object-cover">
         </div>
     </section>
+    <!-- second section -->
     <section>
         <div class="bg-brown">
             <div
-                class="max-w-295 px-5 mx-auto pt-21.25 max-sm:pt-18.75 pb-15.5 max-sm:pb-10 flex gap-18.75 max-xl:flex-wrap max-xl:gap-7">
-                <div class="max-w-148.5 text-left max-lg:text-center max-lg:mx-auto">
-                    <button class="group relative h-7.75 w-27.5 overflow-hidden rounded-full border border-white py-1.25 text-lg font-medium leading-100 text-white duration-300">
-                        <span class="absolute left-1/2 top-1/2 z-0 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white transition-all duration-500 group-hover:h-40 group-hover:w-40"></span>
+                class="max-w-295 px-5 mx-auto max-sm:pt-18 pt-20 pb-15.5 max-sm:pb-10 flex gap-18.75 max-xl:flex-wrap max-xl:gap-7">
+                <div data-aos="fade-right" data-aos-duration="500"
+                    class=" max-w-148.5 text-left max-lg:text-center max-lg:mx-auto">
+                    <button
+                        class="group relative h-7.75 w-27.5 overflow-hidden rounded-full border border-white py-1.25 text-lg font-medium leading-100 text-white duration-300">
+                        <span
+                            class="absolute left-1/2 top-1/2 z-0 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white transition-all duration-500 group-hover:h-40 group-hover:w-40"></span>
                         <span class="relative z-10 transition-colors duration-300 group-hover:text-brown">
                             About us
                         </span>
@@ -56,7 +57,7 @@
                     <h1
                         class="pt-2.5 pb-3.75 max-sm:pb-7.5 text-white font-light text-[64px] leading-130 italic max-sm:text-4xl max-sm:max-w-83.75 max-sm:mx-auto">
                         Pioneering
-                        Crypto <span class="font-bold">and Primary Market</span> Ventures</h1>
+                        Crypto <span class="font-bold not-italic">and Primary <br> Market</span> Ventures</h1>
                     <div class="max-w-144.25 space-y-2.5 max-sm:space-y-4.25 text-white opacity-70">
                         <p class="text-bright-brown font-normal text-base leading-150">ZenPeak Capital is a
                             forward-thinking venture firm specializing in innovative investments within the realms of
@@ -69,419 +70,241 @@
                             diversified portfolio primed for long-term success.</p>
                     </div>
                 </div>
-                <div class="pt-10.25 pb-4.75 max-lg:mx-auto max-sm:py-0">
-                    <img width="471" height="471" src="assets/images/png/circle.png" alt="circle">
+                <div data-aos="zoom-in" class="pt-10.25 pb-4.75 max-lg:mx-auto max-sm:py-0">
+                    <img max-sm:size-79.25 class="max-sm:size-79.25" width="471" height="471"
+                        src="assets/images/png/circle.png" alt="circle">
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="w-full overflow-hidden bg-white mt-16 mb-40.5 max-sm:my-18.5">
-            <div id="logoSlider" class="flex w-max will-change-transform">
-                <!-- FIRST SET -->
-                <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12">
-                    <img width="212.5" height="85" src="./assets/images/png/bittorent.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="bittorent">
+    <!-- logo cards section -->
+    <section class="w-full overflow-hidden mt-16 max-sm:my-18.5">
+        <div id="logoSlider" class="flex w-max will-change-transform">
+            <!-- FIRST SET -->
+            <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12">
+                <img width="212.5" height="85" src="./assets/images/png/bittorent.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="bittorent">
 
-                    <img width="212.5" height="85" src="./assets/images/png/brand.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="brand">
+                <img width="212.5" height="85" src="./assets/images/png/brand.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="brand">
 
-                    <img width="212.5" height="85" src="./assets/images/png/classic.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="classic">
+                <img width="212.5" height="85" src="./assets/images/png/classic.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="classic">
 
-                    <img width="212.5" height="85" src="./assets/images/png/crypto.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="crypto">
+                <img width="212.5" height="85" src="./assets/images/png/crypto.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="crypto">
 
-                    <img width="212.5" height="85" src="./assets/images/png/currency.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="currency">
-                </div>
-                <!-- DUPLICATE SET FOR CONTINUOUS LOOP -->
-                <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12">
-                    <img width="212.5" height="85" src="./assets/images/png/bittorent.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="bittorent">
-
-                    <img width="212.5" height="85" src="./assets/images/png/brand.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="brand">
-
-                    <img width="212.5" height="85" src="./assets/images/png/classic.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="classic">
-
-                    <img width="212.5" height="85" src="./assets/images/png/crypto.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="crypto">
-
-                    <img width="212.5" height="85" src="./assets/images/png/currency.png"
-                        class="h-21.25 w-[212.5px] object-contain shrink-0" alt="currency">
-                </div>
-
+                <img width="212.5" height="85" src="./assets/images/png/currency.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="currency">
             </div>
+            <!-- DUPLICATE SET FOR CONTINUOUS LOOP -->
+            <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12">
+                <img width="212.5" height="85" src="./assets/images/png/bittorent.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="bittorent">
+
+                <img width="212.5" height="85" src="./assets/images/png/brand.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="brand">
+
+                <img width="212.5" height="85" src="./assets/images/png/classic.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="classic">
+
+                <img width="212.5" height="85" src="./assets/images/png/crypto.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="crypto">
+
+                <img width="212.5" height="85" src="./assets/images/png/currency.png"
+                    class="h-21.25 w-[212.5px] object-contain shrink-0" alt="currency">
+            </div>
+
         </div>
     </section>
-    <section class="relative overflow-hidden pb-46.25 max-lg:pb-20 max-md:pb-15 max-sm:pb-26">
-        <div
-            class="sm:bg-[url('./assets/images/png/bg.png')] bg-cover bg-no-repeat bg-center right-0 top-65.5 mx-auto max-w-376.75 w-376.75 h-90.25 absolute left-0">
-        </div>
-        <div class="mx-auto w-full max-w-300 px-5 sm:px-8 lg:px-10">
-            <!-- Heading -->
-            <div class="max-sm:mb-11.25 text-center lg:text-left">
-                <h2 class="ubuntu-light text-4xl font-light ! leading-130 text-light-brown sm:text-5xl lg:text-[64px]">
-                    <span class="italic">Meet</span>
-                    <span class="font-bold">With Our</span>
-                    <span class="italic">Team</span>
-                </h2>
-            </div>
-            <!-- SLIDER -->
-            <div class="relative">
-                <!-- Viewport -->
-                <div id="teamViewport" class="team-viewport w-full overflow-hidden">
-                    <!-- Track -->
-                    <div id="teamTrack" class="team-track flex items-start">
-                        <!-- CARD 1 -->
-                        <div class="team-slide shrink-0 px-2.5 sm:px-3.75">
-                            <div class="team-card relative pt-0 lg:pt-30.5">
-                                <!-- Image / Bio -->
-                                <div class="team-image-wrapper relative h-111.75 w-full lg:h-121.25">
-                                    <!-- IMAGE -->
-                                    <div class="team-image absolute inset-0 overflow-hidden rounded-xs">
-                                        <img src="./assets/images/png/man-1.png" alt="Jhone Doe"
-                                            class="h-full w-full object-cover object-center">
-                                    </div>
-                                    <!-- BIO -->
-                                    <div
-                                        class="team-bio absolute inset-0 flex flex-col items-center justify-center overflow-y-auto bg-brown-brown px-7 text-center">
-                                        <h3 class="mb-4.5 text-base font-medium uppercase text-white">
-                                            BIO
-                                        </h3>
-                                        <p class="text-16 font-normal leading-[1.65] text-white">
-                                            ZenPeak Capital Is A Forward-Thinking
-                                            Venture Firm Specializing In Innovative
-                                            Investments Within The Realms Of
-                                            Cryptocurrency And Primary Markets.
-                                            With A Keen Eye On Emerging Trends
-                                            And Disruptive Technologies, We Are
-                                            Dedicated To Identifying And Nurturing
-                                            High-Potential Opportunities That Yield
-                                            Both Financial Returns And
-                                            Transformative Impact.
-                                        </p>
-                                    </div>
-                                    <!-- SHOW BIO -->
-                                    <button type="button"
-                                        class="show-bio absolute left-3.25 top-6.5 z-10 flex h-17 items-center gap-1.75 pr-2.5 transition-opacity duration-300">
-                                        <span
-                                            class="flex h-17 w-17 shrink-0 items-center justify-center bg-brown-brown">
-                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M28.5833 16.3333H16.3333V28.5833H12.25V16.3333H0V12.25H12.25V0H16.3333V12.25H28.5833V16.3333Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        <span class="whitespace-nowrap text-16 font-medium uppercase text-white">
-                                            Show Bio
-                                        </span>
-                                    </button>
-                                </div>
-                                <!-- Card Information -->
-                                <div class="mt-1.25 text-center sm:text-left">
-                                    <h3 class="mb-1.25 text-16 font-bold leading-[1.13] text-[#3d3836]">
-                                        Jhone Doe
-                                    </h3>
-                                    <p class="text-16 leading-[1.13] text-dark-brown">
-                                        Co-Founder and CEO
-                                    </p>
-                                </div>
+    <!-- swiper section below  -->
+    <img src="" alt="">
+    <section
+        class="min-h-fit bg-[url('assets/images/png/bg-image.png')] bg-center bg-no-repeat bg-contain w-full px-4 py-15 sm:px-5 sm:pt-18.5 lg:pt-40.5">
+        <div class="container max-w-[1141.31px] w-full mx-auto">
+            <div class="row w-full">
+                <h1 data-aos="fade-up"
+                    class="heading text-center lg:text-left mb-15 lg:mb-0 leading-130 text-[clamp(36px,4.444vw,64px)] text-dark font-light capitalize italic">
+                    meet
+                    <span class="font-bold not-italic leading-130">with our</span> team
+                </h1>
+                <div class="cards-swiper swiper overflow-hidden w-full">
+                    <div class="cards swiper-wrapper">
+                        <div
+                            class="card swiper-slide max-w-90.5 w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-sm relative mt-27 max-lg:mt-0 overflow-hidden">
+                            <img width="361" height="485" class="object-cover w-full h-auto"
+                                src="assets/images/png/man-1.png" alt="card-img" />
+
+                            <div class="show-bio flex items-center absolute top-3 left-3 gap-3.25 z-50">
+                                <button
+                                    class="show-btn size-17 rounded-1 cursor-pointer bg-brown flex items-center justify-center duration-300 ease-in-out transition-all">
+                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="plus-vertical transition-all duration-300"
+                                            d="M22.458 10.208H26.5413V38.7913H22.458V10.208Z" fill="white" />
+
+                                        <path d="M10.208 22.458H38.7913V26.5413H10.208V22.458Z" fill="white" />
+                                    </svg>
+                                </button>
+                                <h1 class="text-bio font-medium text-base leading-100 text-white">
+                                    SHOW BIO
+                                </h1>
+                            </div>
+
+                            <div
+                                class="bio max-w-90.25 z-10 rounded absolute top-full opacity-0 invisible translate-y-5 transition-all duration-500 ease-in-out bg-brown py-[103.87px] px-8.75">
+                                <h1 class="heading text-center font-medium text-white text-base leading-100">
+                                    BIO
+                                </h1>
+                                <p
+                                    class="para capitalize text-center text-white font-normal mt-5.25 opacity-70 leading-150">
+                                    ZenPeak Capital is a forward-thinking venture firm
+                                    specializing in innovative investments within the realms of
+                                    cryptocurrency and primary markets. With a keen eye on
+                                    emerging trends and disruptive technologies, we are
+                                    dedicated to identifying and nurturing high-potential
+                                    opportunities that yield both financial returns and
+                                    transformative impact.
+                                </p>
+                            </div>
+
+                            <div class="person-info mt-5">
+                                <h1 class="name text-dark-blue leading-100 text-base font-bold">
+                                    Jhone Doe
+                                </h1>
+                                <p
+                                    class="profession opacity-70 text-dark-blue text-base leading-100 mt-1.25 font-normal">
+                                    Co-Founder and CEO
+                                </p>
                             </div>
                         </div>
-                        <!-- CARD 2 -->
-                        <div class="team-slide shrink-0 px-2.5 sm:px-3.75">
-                            <div class="team-card relative pt-0 lg:pt-13.75">
-                                <div class="team-image-wrapper relative h-111.75 w-full lg:h-121.25">
-                                    <!-- IMAGE -->
-                                    <div class="team-image absolute inset-0 overflow-hidden rounded-xs">
-                                        <img src="./assets/images/png/girl-1.png" alt="Jhone Doe"
-                                            class="h-full w-full object-cover object-center">
-                                    </div>
-                                    <!-- BIO -->
-                                    <div
-                                        class="team-bio absolute inset-0 flex flex-col items-center justify-center overflow-y-auto bg-brown-brown px-7 text-center">
-                                        <h3 class="mb-4.5 text-16 font-medium uppercase text-white">
-                                            BIO
-                                        </h3>
-                                        <p class="text-16 leading-[1.65] text-white">
-                                            ZenPeak Capital Is A Forward-Thinking
-                                            Venture Firm Specializing In Innovative
-                                            Investments Within The Realms Of
-                                            Cryptocurrency And Primary Markets.
-                                            With A Keen Eye On Emerging Trends
-                                            And Disruptive Technologies, We Are
-                                            Dedicated To Identifying And Nurturing
-                                            High-Potential Opportunities That Yield
-                                            Both Financial Returns And
-                                            Transformative Impact.
-                                        </p>
-                                    </div>
-                                    <!-- SHOW BIO -->
-                                    <button type="button"
-                                        class="show-bio absolute left-3.25 top-6.5 z-10 flex h-17 items-center gap-1.75 pr-2.5 transition-opacity duration-300">
-                                        <span
-                                            class="flex h-17 w-17 shrink-0 items-center justify-center bg-brown-brown">
-                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
-                                                <path
-                                                    d="M28.5833 16.3333H16.3333V28.5833H12.25V16.3333H0V12.25H12.25V0H16.3333V12.25H28.5833V16.3333Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        <span class="whitespace-nowrap text-16 font-medium uppercase text-white">
-                                            Show Bio
-                                        </span>
-                                    </button>
-                                </div>
-                                <!-- Information -->
-                                <div class="mt-1.25 text-center sm:text-left">
-                                    <h3 class="mb-1.25 text-16 font-bold leading-[1.13] text-[#3d3836]">
-                                        Jhone Doe
-                                    </h3>
-                                    <p class="text-16 leading-[1.13] text-dark-brown">
-                                        Co-Founder and CEO
-                                    </p>
-                                </div>
+                        <div
+                            class="card swiper-slide max-w-90.5 w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-sm relative mt-11 max-lg:mt-0 overflow-hidden">
+                            <img width="361" height="485" class="object-cover w-full h-auto"
+                                src="assets/images/png/girl-1.png" alt="card-img" />
+
+                            <div class="show-bio flex items-center absolute top-3 left-3 gap-3.25 z-50">
+                                <button
+                                    class="show-btn size-17 rounded-1 cursor-pointer bg-brown flex items-center justify-center duration-300 ease-in-out transition-all">
+                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="plus-vertical transition-all duration-300"
+                                            d="M22.458 10.208H26.5413V38.7913H22.458V10.208Z" fill="white" />
+
+                                        <path d="M10.208 22.458H38.7913V26.5413H10.208V22.458Z" fill="white" />
+                                    </svg>
+                                </button>
+                                <h1 class="text-bio font-medium text-base leading-100 text-white">
+                                    SHOW BIO
+                                </h1>
+                            </div>
+                            <div
+                                class="bio max-w-90.25 z-10 rounded absolute top-full opacity-0 invisible translate-y-5 transition-all duration-500 ease-in-out bg-brown py-[103.87px] px-8.75">
+                                <h1 class="heading text-center font-medium text-white text-base leading-100">
+                                    BIO
+                                </h1>
+                                <p
+                                    class="para capitalize text-center text-white font-normal mt-5.25 opacity-70 leading-150">
+                                    ZenPeak Capital is a forward-thinking venture firm
+                                    specializing in innovative investments within the realms of
+                                    cryptocurrency and primary markets. With a keen eye on
+                                    emerging trends and disruptive technologies, we are
+                                    dedicated to identifying and nurturing high-potential
+                                    opportunities that yield both financial returns and
+                                    transformative impact.
+                                </p>
+                            </div>
+
+                            <div class="person-info mt-5">
+                                <h1 class="name text-dark-blue leading-100 text-base font-bold">
+                                    Jhone Doe
+                                </h1>
+                                <p
+                                    class="profession opacity-70 text-dark-blue text-base leading-100 mt-1.25 font-normal">
+                                    Co-Founder and CEO
+                                </p>
                             </div>
                         </div>
-                        <!-- CARD 3 -->
-                        <div class="team-slide shrink-0 px-2.5 sm:px-3.75">
-                            <div class="team-card relative pt-0">
-                                <div class="team-image-wrapper relative h-111.75 w-full lg:h-121.25">
-                                    <!-- IMAGE -->
-                                    <div class="team-image absolute inset-0 overflow-hidden rounded-xs">
-                                        <img src="./assets/images/png/man-2.png" alt="Jhone Doe"
-                                            class="h-full w-full object-cover object-center">
-                                    </div>
-                                    <!-- BIO -->
-                                    <div
-                                        class="team-bio absolute inset-0 flex flex-col items-center justify-center overflow-y-auto bg-brown-brown px-7 text-center">
-                                        <h3 class="mb-4.5 text-16 font-medium uppercase text-white">
-                                            BIO
-                                        </h3>
-                                        <p class="text-16 leading-[1.65] text-white">
-                                            ZenPeak Capital Is A Forward-Thinking
-                                            Venture Firm Specializing In Innovative
-                                            Investments Within The Realms Of
-                                            Cryptocurrency And Primary Markets.
-                                            With A Keen Eye On Emerging Trends
-                                            And Disruptive Technologies, We Are
-                                            Dedicated To Identifying And Nurturing
-                                            High-Potential Opportunities That Yield
-                                            Both Financial Returns And
-                                            Transformative Impact.
-                                        </p>
-                                    </div>
-                                    <!-- SHOW BIO -->
-                                    <button type="button"
-                                        class="show-bio absolute left-3.25 top-6.5 z-10 flex h-17 items-center gap-1.75 pr-2.5 transition-opacity duration-300">
-                                        <span
-                                            class="flex h-17 w-17 shrink-0 items-center justify-center bg-brown-brown">
-                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
-                                                <path
-                                                    d="M28.5833 16.3333H16.3333V28.5833H12.25V16.3333H0V12.25H12.25V0H16.3333V12.25H28.5833V16.3333Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        <span class="whitespace-nowrap text-16 font-medium uppercase text-white">
-                                            Show Bio
-                                        </span>
-                                    </button>
-                                </div>
-                                <!-- Information -->
-                                <div class="mt-1.25 text-center sm:text-left">
-                                    <h3 class="mb-1.25 text-16 font-bold leading-[1.13] text-[#3d3836]">
-                                        Jhone Doe
-                                    </h3>
-                                    <p class="text-16 leading-[1.13] text-dark-brown">
-                                        Co-Founder and CEO
-                                    </p>
-                                </div>
+                        <div
+                            class="card swiper-slide max-w-90.5 w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-sm relative overflow-hidden">
+                            <img width="361" height="485" class="object-cover w-full h-auto"
+                                src="assets/images/png/man-2.png" alt="card-img" />
+                            <div class="show-bio flex items-center absolute top-3 left-3 gap-3.25 z-50">
+                                <button
+                                    class="show-btn size-17 rounded-1 cursor-pointer bg-brown flex items-center justify-center duration-300 ease-in-out transition-all">
+                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="plus-vertical transition-all duration-300"
+                                            d="M22.458 10.208H26.5413V38.7913H22.458V10.208Z" fill="white" />
+
+                                        <path d="M10.208 22.458H38.7913V26.5413H10.208V22.458Z" fill="white" />
+                                    </svg>
+                                </button>
+                                <h1 class="text-bio font-medium text-base leading-100 text-white">
+                                    SHOW BIO
+                                </h1>
                             </div>
-                        </div>
-                        <!-- CARD 4 -->
-                        <div class="team-slide shrink-0 px-2.5 sm:px-3.75">
-                            <div class="team-card relative pt-0 lg:pt-30.5">
-                                <div class="team-image-wrapper relative h-111.75 w-full lg:h-121.25">
-                                    <div class="team-image absolute inset-0 overflow-hidden rounded-xs">
-                                        <img src="./assets/images/png/man-1.png" alt="Jhone Doe"
-                                            class="h-full w-full object-cover object-center">
-                                    </div>
-                                    <div
-                                        class="team-bio absolute inset-0 flex flex-col items-center justify-center overflow-y-auto bg-brown-brown px-7 text-center">
-                                        <h3 class="mb-4.5 text-16 font-medium uppercase text-white">
-                                            BIO
-                                        </h3>
-                                        <p class="text-16 leading-[1.65] text-white">
-                                            ZenPeak Capital Is A Forward-Thinking
-                                            Venture Firm Specializing In Innovative
-                                            Investments Within The Realms Of
-                                            Cryptocurrency And Primary Markets.
-                                            With A Keen Eye On Emerging Trends
-                                            And Disruptive Technologies, We Are
-                                            Dedicated To Identifying And Nurturing
-                                            High-Potential Opportunities That Yield
-                                            Both Financial Returns And
-                                            Transformative Impact.
-                                        </p>
-                                    </div>
-                                    <button type="button"
-                                        class="show-bio absolute left-3.25 top-6.5 z-10 flex h-17 items-center gap-1.75 pr-2.5 transition-opacity duration-300">
-                                        <span
-                                            class="flex h-17 w-17 shrink-0 items-center justify-center bg-brown-brown">
-                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
-                                                <path
-                                                    d="M28.5833 16.3333H16.3333V28.5833H12.25V16.3333H0V12.25H12.25V0H16.3333V12.25H28.5833V16.3333Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        <span class="whitespace-nowrap text-16 font-medium uppercase text-white">
-                                            Show Bio
-                                        </span>
-                                    </button>
-                                </div>
-                                <div class="mt-1.25 text-center sm:text-left">
-                                    <h3 class="mb-1.25 text-16 font-bold leading-[1.13] text-[#3d3836]">
-                                        Jhone Doe
-                                    </h3>
-                                    <p class="text-16 leading-[1.13] text-dark-brown">
-                                        Co-Founder and CEO
-                                    </p>
-                                </div>
+
+                            <div
+                                class="bio max-w-90.25 z-10 rounded absolute top-full opacity-0 invisible translate-y-5 transition-all duration-500 ease-in-out bg-brown py-[103.87px] px-8.75">
+                                <h1 class="heading text-center font-medium text-white text-base leading-100">
+                                    BIO
+                                </h1>
+                                <p
+                                    class="para capitalize text-center text-white font-normal mt-5.25 opacity-70 leading-150">
+                                    ZenPeak Capital is a forward-thinking venture firm
+                                    specializing in innovative investments within the realms of
+                                    cryptocurrency and primary markets. With a keen eye on
+                                    emerging trends and disruptive technologies, we are
+                                    dedicated to identifying and nurturing high-potential
+                                    opportunities that yield both financial returns and
+                                    transformative impact.
+                                </p>
                             </div>
-                        </div>
-                        <!-- CARD 5 -->
-                        <div class="team-slide shrink-0 px-2.5 sm:px-3.75">
-                            <div class="team-card relative pt-0 lg:pt-13.75">
-                                <div class="team-image-wrapper relative h-111.75 w-full lg:h-121.25">
-                                    <div class="team-image absolute inset-0 overflow-hidden rounded-xs">
-                                        <img src="./assets/images/png/girl-1.png" alt="Jhone Doe"
-                                            class="h-full w-full object-cover object-center">
-                                    </div>
-                                    <div
-                                        class="team-bio absolute inset-0 flex flex-col items-center justify-center overflow-y-auto bg-brown-brown px-7 text-center">
-                                        <h3 class="mb-4.5 text-16 font-medium uppercase text-white">
-                                            BIO
-                                        </h3>
-                                        <p class="text-16 leading-[1.65] text-white">
-                                            ZenPeak Capital Is A Forward-Thinking
-                                            Venture Firm Specializing In Innovative
-                                            Investments Within The Realms Of
-                                            Cryptocurrency And Primary Markets.
-                                            With A Keen Eye On Emerging Trends
-                                            And Disruptive Technologies, We Are
-                                            Dedicated To Identifying And Nurturing
-                                            High-Potential Opportunities That Yield
-                                            Both Financial Returns And
-                                            Transformative Impact.
-                                        </p>
-                                    </div>
-                                    <button type="button"
-                                        class="show-bio absolute left-3.25 top-6.5 z-10 flex h-17 items-center gap-1.75 pr-2.5 transition-opacity duration-300">
-                                        <span
-                                            class="flex h-17 w-17 shrink-0 items-center justify-center bg-brown-brown">
-                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
-                                                <path
-                                                    d="M28.5833 16.3333H16.3333V28.5833H12.25V16.3333H0V12.25H12.25V0H16.3333V12.25H28.5833V16.3333Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        <span class="whitespace-nowrap text-16 font-medium uppercase text-white">
-                                            Show Bio
-                                        </span>
-                                    </button>
-                                </div>
-                                <div class="mt-1.25 text-center sm:text-left">
-                                    <h3 class="mb-1.25 text-16 font-bold leading-[1.13] text-[#3d3836]">
-                                        Jhone Doe
-                                    </h3>
-                                    <p class="text-16 leading-[1.13] text-dark-brown">
-                                        Co-Founder and CEO
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD 6 -->
-                        <div class="team-slide shrink-0 px-2.5 sm:px-3.75">
-                            <div class="team-card relative pt-0">
-                                <div class="team-image-wrapper relative h-111.75 w-full lg:h-121.25">
-                                    <div class="team-image absolute inset-0 overflow-hidden rounded-xs">
-                                        <img src="./assets/images/png/man-2.png" alt="Jhone Doe"
-                                            class="h-full w-full object-cover object-center">
-                                    </div>
-                                    <div
-                                        class="team-bio absolute inset-0 flex flex-col items-center justify-center overflow-y-auto bg-brown-brown px-7 text-center">
-                                        <h3 class="mb-4.5 text-16 font-medium uppercase text-white">
-                                            BIO
-                                        </h3>
-                                        <p class="text-16 leading-[1.65] text-white">
-                                            ZenPeak Capital Is A Forward-Thinking
-                                            Venture Firm Specializing In Innovative
-                                            Investments Within The Realms Of
-                                            Cryptocurrency And Primary Markets.
-                                            With A Keen Eye On Emerging Trends
-                                            And Disruptive Technologies, We Are
-                                            Dedicated To Identifying And Nurturing
-                                            High-Potential Opportunities That Yield
-                                            Both Financial Returns And
-                                            Transformative Impact.
-                                        </p>
-                                    </div>
-                                    <button type="button"
-                                        class="show-bio absolute left-3.25 top-6.5 z-10 flex h-17 items-center gap-1.75 pr-2.5 transition-opacity duration-300">
-                                        <span
-                                            class="flex h-17 w-17 shrink-0 items-center justify-center bg-brown-brown">
-                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
-                                                <path
-                                                    d="M28.5833 16.3333H16.3333V28.5833H12.25V16.3333H0V12.25H12.25V0H16.3333V12.25H28.5833V16.3333Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        <span class="whitespace-nowrap text-16 font-medium uppercase text-white">
-                                            Show Bio
-                                        </span>
-                                    </button>
-                                </div>
-                                <div class="mt-1.25 text-center sm:text-left">
-                                    <h3 class="mb-1.25 text-16 font-bold leading-[1.13] text-[#3d3836]">
-                                        Jhone Doe
-                                    </h3>
-                                    <p class="text-16 leading-[1.13] text-dark-brown">
-                                        Co-Founder and CEO
-                                    </p>
-                                </div>
+
+                            <div class="person-info mt-5">
+                                <h1 class="name text-dark-blue leading-100 text-base font-bold">
+                                    Jhone Doe
+                                </h1>
+                                <p
+                                    class="profession opacity-70 text-dark-blue text-base leading-100 mt-1.25 font-normal">
+                                    Co-Founder and CEO
+                                </p>
                             </div>
                         </div>
                     </div>
+                    <div
+                        class="navigation mt-8.25 lg:mt-0 flex gap-9.5 items-center justify-center lg:justify-normal relative">
+                        <div class="left-button lg:w-full max-w-90.5 justify-end flex cursor-pointer transition-opacity duration-300"
+                            id="left-button" onclick="moveLeft()">
+                            <svg width="60" height="15" viewBox="0 0 60 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.292896 6.65715C-0.0976257 7.04767 -0.0976258 7.68084 0.292896 8.07136L6.65686 14.4353C7.04738 14.8258 7.68055 14.8258 8.07107 14.4353C8.4616 14.0448 8.4616 13.4116 8.07107 13.0211L2.41422 7.36425L8.07107 1.7074C8.4616 1.31687 8.4616 0.68371 8.07107 0.293185C7.68055 -0.097339 7.04738 -0.097339 6.65686 0.293185L0.292896 6.65715ZM60 6.36426L1 6.36425L1 8.36425L60 8.36426L60 6.36426Z"
+                                    fill="#A68272" />
+                            </svg>
+                        </div>
+                        <div class="right-button lg:w-full flex justify-end lg:absolute lg:bottom-30 cursor-pointer transition-opacity duration-300"
+                            id="right-button" onclick="moveRight()">
+                            <svg class="cursor-pointer" width="60" height="15" viewBox="0 0 60 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M59.7071 6.65715C60.0976 7.04767 60.0976 7.68084 59.7071 8.07136L53.3431 14.4353C52.9526 14.8258 52.3195 14.8258 51.9289 14.4353C51.5384 14.0448 51.5384 13.4116 51.9289 13.0211L57.5858 7.36425L51.9289 1.7074C51.5384 1.31687 51.5384 0.68371 51.9289 0.293185C52.3195 -0.097339 52.9526 -0.097339 53.3431 0.293185L59.7071 6.65715ZM-8.74228e-08 6.36426L59 6.36425L59 8.36425L8.74228e-08 8.36426L-8.74228e-08 6.36426Z"
+                                    fill="#A68272" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <button id="prevTeam" type="button" aria-label="Previous team member"
-                    class="absolute -left-2 top-[95%] z-20 flex h-10.5 w-10.5 -translate-y-1/2 items-center justify-center rounded-full text-brown-brown transition-all duration-300 hover:text-white sm:-left-5 lg:left-75 lg:top-158.75">
-                    <svg width="60" height="15" viewBox="0 0 60 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.292896 6.65715C-0.0976257 7.04767 -0.0976258 7.68084 0.292896 8.07136L6.65686 14.4353C7.04738 14.8258 7.68055 14.8258 8.07107 14.4353C8.4616 14.0448 8.4616 13.4116 8.07107 13.0211L2.41422 7.36425L8.07107 1.7074C8.4616 1.31687 8.4616 0.68371 8.07107 0.293185C7.68055 -0.097339 7.04738 -0.097339 6.65686 0.293185L0.292896 6.65715ZM60 6.36426L1 6.36425L1 8.36425L60 8.36426L60 6.36426Z"
-                            fill="#A68272" />
-                    </svg>
-                </button>
-                <button id="nextTeam" type="button" aria-label="Next team member"
-                    class="absolute -right-2 top-[90%] z-20 flex h-10.5 w-10.5 -translate-y-1/2 items-center justify-center rounded-full text-brown-brown transition-all duration-300 hover:text-white sm:-right-5 lg:right-7.5 lg:top-[80%]">
-                    <svg width="60" height="15" viewBox="0 0 60 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M59.7071 6.65715C60.0976 7.04767 60.0976 7.68084 59.7071 8.07136L53.3431 14.4353C52.9526 14.8258 52.3195 14.8258 51.9289 14.4353C51.5384 14.0448 51.5384 13.4116 51.9289 13.0211L57.5858 7.36425L51.9289 1.7074C51.5384 1.31687 51.5384 0.68371 51.9289 0.293185C52.3195 -0.097339 52.9526 -0.097339 53.3431 0.293185L59.7071 6.65715ZM-8.74228e-08 6.36426L59 6.36425L59 8.36425L8.74228e-08 8.36425L-8.74228e-08 6.36426Z"
-                            fill="#A68272" />
-                    </svg>
-                </button>
             </div>
         </div>
     </section>
+    <!-- above swiper -->
     <section id="portfolio"
         class="relative overflow-hidden px-4 py-20 sm:py-28 mb-15 md:mb-20 lg:mb-0 lg:pt-46.25 lg:pb-54.5 max-sm:pt-0 max-sm:pb-24.25 max-sm:mb-0">
         <div class="relative z-10 mx-auto flex w-full max-w-184.5 flex-col items-center">
             <!-- HEADING -->
             <div class="mb-10 max-w-184.5 text-center max-sm:mb-11.5">
-                <h2
+                <h2  data-aos="fade-up"
                     class="section-title font-bold tracking-[-1px] text-[#575354] text-[42px] leading-130 sm:text-[52px] lg:text-[64px] max-sm:text-4xl max-sm:max-w-81.75 max-sm:leading-130">
                     Invest
                     <span class="font-light italic">
@@ -673,10 +496,10 @@
             <img src="assets/images/png/right-img.png" alt="right-img" class="absolute top-29 right-0 max-xl:hidden">
             <div
                 class="max-w-296 mx-auto px-5 bg-brown py-11.25 pl-7 pr-1.25 max-sm:px-5 max-sm:pt-9.75 rounded-2xl flex gap-13 max-xl:flex-wrap-reverse">
-                <div class="pl-[16.31px] pb-[19.52px] max-sm:p-0 max-xl:mx-auto">
+                <div data-aos="zoom-in" data-aos-duration="500" class="pl-[16.31px] pb-[19.52px] max-sm:p-0 max-xl:mx-auto">
                     <img width="486.69" height="500" src="assets/images/png/capital.png" alt="capital">
                 </div>
-                <div
+                <div  data-aos="zoom-in-left" data-aos-duration="500"
                     class="pt-11.25 pb-[45.56px] pr-4 max-sm:p-0 max-w-135 max-xl:mx-auto max-lg:text-center max-lg:max-w-175">
                     <h1
                         class="font-light max-sm:max-w-83.75 text-white pb-3 max-sm:pb-3.75 italic text-[64px] leading-130 max-sm:text-4xl max-sm:text-left max-sm:leading-130">
@@ -718,7 +541,7 @@
                         <div
                             class="border bg-white border-[#000000] rounded-2xl max-w-91.25 py-5 pl-5.75 flex gap-5.75 max-sm:py-[18.25px] max-sm:pl-5.25 max-sm:h-25.75">
                             <div
-                                class="bg-brown w-18.25 hover:shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl pt-2.25 pr-1.25 pb-2 pl-3">
+                                class="bg-brown w-18.25 shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl pt-2.25 pr-1.25 pb-2 pl-3">
                                 <img width="56" height="56" src="assets/images/svg/investigation.svg"
                                     alt="investigation">
                             </div>
@@ -732,7 +555,7 @@
                         <div
                             class="border bg-white border-[#000000] rounded-2xl max-w-91.25 py-5 pl-5.75 flex gap-5.75 max-sm:py-[18.25px] max-sm:pl-5.25 max-sm:h-25.75">
                             <div
-                                class="bg-brown w-18.25 hover:shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl p-2.25">
+                                class="bg-brown w-18.25 shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl p-2.25">
                                 <img width="55" height="55" src="assets/images/svg/business.svg" alt="business">
                             </div>
                             <div class="pt-0.75 pb-2.25">
@@ -746,7 +569,7 @@
                         <div
                             class="border bg-white border-[#000000] rounded-2xl max-w-91.25 py-5 pl-5.75 flex gap-5.75 max-sm:py-[18.25px] max-sm:pl-5.25 max-sm:h-25.75">
                             <div
-                                class="bg-brown w-18.25 hover:shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl pt-2.75 pr-2.75 pb-2.5 pl-2.5">
+                                class="bg-brown w-18.25 shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl pt-2.75 pr-2.75 pb-2.5 pl-2.5">
                                 <img width="52" height="52" src="assets/images/svg/people.svg" alt="people">
                             </div>
                             <div class="pt-0.75 pb-2.25">
@@ -759,7 +582,7 @@
                         <div
                             class="border bg-white border-[#000000] rounded-2xl max-w-91.25 py-5 pl-5.75  flex gap-5.75 max-sm:py-[18.25px] max-sm:pl-5.25 max-sm:h-25.75">
                             <div
-                                class="bg-brown w-18.25 hover:shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl pt-2.5 pr-2.5 pb-2.25 pl-2.25">
+                                class="bg-brown w-18.25 shadow-[0px_4px_31.4px_0px_#DAAF95] duration-300 h-18.25 max-sm:w-16.5 max-sm:h-16.5 rounded-2xl pt-2.5 pr-2.5 pb-2.25 pl-2.25">
                                 <img width="54" height="54" src="assets/images/svg/business-2.svg" alt="business">
                             </div>
                             <div class="pt-0.75 pb-2.25">
@@ -774,8 +597,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="bg-[url('/assets/images/png/footer-bg.png')] bg-cover max-w-full">
+    <footer class="bg-no-repeat bg-[url('/assets/images/svg/footer.webp')] bg-center bg-cover">
+        <div class="max-w-full ">
             <div class="max-w-136.75 px-5 mx-auto pt-15 pb-12.5 max-sm:pt-16.75 max-sm:pb-18">
                 <div class="pb-6.25 max-sm:pb-8.5">
                     <a href="#">
@@ -802,15 +625,19 @@
                             src="assets/images/svg/twitter.svg" alt="twitter" class="hover:scale-110 duration-300"></a>
                 </div>
             </div>
-            <footer class="max-w-360 border-t-2 border-[#474747]">
+            <div class="max-w-360 border-t-2 border-[#474747] bg-center bg-cover ">
                 <div
                     class="px-37.5 py-4.5 flex justify-between max-md:flex-wrap text-[#979797] max-sm:max-w-125 max-sm:mx-auto max-sm:justify-center max-sm:px-5 max-sm:py-3 max-sm:gap-2.25">
                     <p>Privacy Policy | Conditions</p>
                     <p>ZenPeak | Copyright©2024</p>
                 </div>
-            </footer>
-    </section>
+            </div>
+    </footer>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="src/js/main.js"></script>
 </body>
 
 </html>
+
+<img src="" alt="">

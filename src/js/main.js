@@ -1,2 +1,4 @@
-import "./bio.js";
+
+import "./swiper.js";
 import "./faq.js";
+AOS.init();
