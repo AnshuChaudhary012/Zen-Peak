@@ -95,11 +95,11 @@ cards.forEach((card) => {
     verticalIcon.classList.toggle("opacity-0", !isOpen);
 
     if (!isOpen) {
-      showBtn.classList.remove("bg-dark-peach");
-      showBtn.classList.add("bg-peach");
+      showBtn.classList.remove("border", "border-transparent");
+      showBtn.classList.add("border", "border-white");
     } else {
-      showBtn.classList.remove("bg-peach");
-      showBtn.classList.add("bg-dark-peach");
+      showBtn.classList.remove("border", "border-white");
+      showBtn.classList.add("border", "border-transparent");
     }
   });
 });

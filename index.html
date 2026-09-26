@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -8,26 +8,26 @@
     <link rel="icon" href="assets/images/png/logo.ico">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 
-<body class="bg-[#F7F3F0]">
+<body class="bg-[#F7F3F0] overflow-x-hidden">
     <!-- first section -->
     <section>
         <div class="bg-[#DFBCA6]">
-            <div class="pt-24.75 pb-9.25 max-sm:pb-18.75 max-w-268 px-5 mx-auto max-sm:pt-14.25">
+            <div class="pt-24.75 max-sm:pb-18.75 max-w-268 px-5 mx-auto max-sm:pt-14.25">
                 <a href="#">
                     <img width="480" height="99" src="assets/images/svg/logo.svg" alt="logo"
                         class="flex mx-auto max-sm:w-60">
                 </a>
                 <h1
-                    class="  animate__animated animate__backInDown italic mt-[28.92px] mb-10 max-sm:mt-10.25 max-sm:pm-15.25 font-light text-[75px] text-white text-center leading-130 max-sm:text-[43px] max-sm:mb-15.25">
+                    class="  animate__animated animate__backInDown italic mt-7 mb-10 max-sm:mt-10.25 max-sm:pm-15.25 font-light text-[75px] text-white text-center leading-130 max-sm:text-[43px] max-sm:mb-15.25">
                     Exploring
                     <span class="font-bold">Crypto and Primary</span>
-                    <span  class="max-sm:text-nowrap">Market Strategies</span>
+                    <span class="max-sm:text-nowrap">Market Strategies</span>
                 </h1>
                 <button
-                    class="group relative mx-auto h-18.25 flex max-sm:justify-center rounded-full border border-white w-50.25 text-xl font-medium leading-100 text-white duration-300 max-sm:py-5 overflow-hidden max-sm:w-82.5 max-sm:h-15.75">
+                    class="group relative mx-auto h-18.25 flex max-sm:justify-center rounded-full border border-white w-50.25 text-xl font-medium leading-100 text-white duration-500 max-sm:py-5 overflow-hidden max-sm:w-82.5 max-sm:h-15.75">
                     <span
                         class="absolute left-1/2 top-1/2 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white transition-all duration-500 ease-out group-hover:h-150 group-hover:w-150"></span>
                     <span class="relative z-10 mx-auto transition-colors duration-500 my-auto group-hover:text-brown">
@@ -36,7 +36,7 @@
                 </button>
             </div>
             <img width="1440" height="567" src="assets/images/svg/mountian.webp" alt="mountain"
-                class="mx-auto max-sm:h-79.5 max-sm:object-cover">
+                class=" w-full max-sm:h-79.5 max-sm:object-cover">
         </div>
     </section>
     <!-- second section -->
@@ -51,7 +51,7 @@
                         <span
                             class="absolute left-1/2 top-1/2 z-0 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white transition-all duration-500 group-hover:h-40 group-hover:w-40"></span>
                         <span class="relative z-10 transition-colors duration-300 group-hover:text-brown">
-                            About us
+                            Abou us
                         </span>
                     </button>
                     <h1
@@ -78,40 +78,38 @@
         </div>
     </section>
     <!-- logo cards section -->
-    <section class="w-full overflow-hidden mt-16 max-sm:my-18.5">
+    <section class="w-full overflow-hidden mt-16 max-sm:my-18.5 ">
         <div id="logoSlider" class="flex w-max will-change-transform">
             <!-- FIRST SET -->
-            <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12">
-                <img width="212.5" height="85" src="./assets/images/png/bittorent.png"
+            <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12 max-sm:h-15.5">
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/bittorent.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="bittorent">
-
-                <img width="212.5" height="85" src="./assets/images/png/brand.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/brand.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="brand">
 
-                <img width="212.5" height="85" src="./assets/images/png/classic.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/classic.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="classic">
 
-                <img width="212.5" height="85" src="./assets/images/png/crypto.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/crypto.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="crypto">
 
-                <img width="212.5" height="85" src="./assets/images/png/currency.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/currency.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="currency">
             </div>
             <!-- DUPLICATE SET FOR CONTINUOUS LOOP -->
-            <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12">
-                <img width="212.5" height="85" src="./assets/images/png/bittorent.png"
+            <div class="flex items-center gap-20 px-10 max-sm:gap-10 max-md:gap-12 max-sm:h-15.5">
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/bittorent.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="bittorent">
-
-                <img width="212.5" height="85" src="./assets/images/png/brand.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/brand.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="brand">
 
-                <img width="212.5" height="85" src="./assets/images/png/classic.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/classic.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="classic">
 
-                <img width="212.5" height="85" src="./assets/images/png/crypto.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/crypto.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="crypto">
 
-                <img width="212.5" height="85" src="./assets/images/png/currency.png"
+                <img class="max-sm:h-15.5 max-sm:w-39" width="212.5" height="85" src="./assets/images/png/currency.png"
                     class="h-21.25 w-[212.5px] object-contain shrink-0" alt="currency">
             </div>
 
@@ -120,7 +118,7 @@
     <!-- swiper section below  -->
     <img src="" alt="">
     <section
-        class="min-h-fit bg-[url('assets/images/png/bg-image.png')] bg-center bg-no-repeat bg-contain w-full px-4 py-15 sm:px-5 sm:pt-18.5 lg:pt-40.5">
+        class="min-h-fit bg-[url('/assets/images/png/bg-image.png')] bg-no-repeat bg-contain w-full px-4 pb-15 sm:px-5 sm:pt-18.5 lg:pt-40.5 bg-position-[center_60%]">
         <div class="container max-w-[1141.31px] w-full mx-auto">
             <div class="row w-full">
                 <h1 data-aos="fade-up"
@@ -132,7 +130,7 @@
                     <div class="cards swiper-wrapper">
                         <div
                             class="card swiper-slide max-w-90.5 w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-sm relative mt-27 max-lg:mt-0 overflow-hidden">
-                            <img width="361" height="485" class="object-cover w-full h-auto"
+                            <img width="361" height="485" class="object-cover max-sm:w-83.25 max-sm:h-111.75"
                                 src="assets/images/png/man-1.png" alt="card-img" />
 
                             <div class="show-bio flex items-center absolute top-3 left-3 gap-3.25 z-50">
@@ -180,7 +178,7 @@
                         </div>
                         <div
                             class="card swiper-slide max-w-90.5 w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-sm relative mt-11 max-lg:mt-0 overflow-hidden">
-                            <img width="361" height="485" class="object-cover w-full h-auto"
+                            <img width="361" height="485" class="object-cover max-sm:w-83.25 max-sm:h-111.75"
                                 src="assets/images/png/girl-1.png" alt="card-img" />
 
                             <div class="show-bio flex items-center absolute top-3 left-3 gap-3.25 z-50">
@@ -227,7 +225,7 @@
                         </div>
                         <div
                             class="card swiper-slide max-w-90.5 w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-sm relative overflow-hidden">
-                            <img width="361" height="485" class="object-cover w-full h-auto"
+                            <img width="361" height="485" class="object-cover max-sm:w-83.25 max-sm:h-111.75"
                                 src="assets/images/png/man-2.png" alt="card-img" />
                             <div class="show-bio flex items-center absolute top-3 left-3 gap-3.25 z-50">
                                 <button
@@ -300,11 +298,16 @@
     </section>
     <!-- above swiper -->
     <section id="portfolio"
-        class="relative overflow-hidden px-4 py-20 sm:py-28 mb-15 md:mb-20 lg:mb-0 lg:pt-46.25 lg:pb-54.5 max-sm:pt-0 max-sm:pb-24.25 max-sm:mb-0">
+        class="relative overflow-hidden px-4 py-20 sm:py-28 mb-15 md:mb-20 lg:mb-0 lg:pt-46.25 lg:pb-54.5 max-sm:pt-0 max-sm:pb-24.25 max-sm:mb-0 ">
+        <img class="absolute max-sm:hidden top-[28.5%]" width="1440" height="870"
+            src="/assets/images/png/faq_bg_img.png" alt="faq_bg_img">
+        <img class="absolute sm:hidden left-1/2 -translate-x-1/2 top-[6%]" width="375" height="627"
+            src="/assets/images/png/small_screen_last.png" alt="faq_bg_img">
+
         <div class="relative z-10 mx-auto flex w-full max-w-184.5 flex-col items-center">
             <!-- HEADING -->
             <div class="mb-10 max-w-184.5 text-center max-sm:mb-11.5">
-                <h2  data-aos="fade-up"
+                <h2 data-aos="fade-up"
                     class="section-title font-bold tracking-[-1px] text-[#575354] text-[42px] leading-130 sm:text-[52px] lg:text-[64px] max-sm:text-4xl max-sm:max-w-81.75 max-sm:leading-130">
                     Invest
                     <span class="font-light italic">
@@ -314,178 +317,178 @@
                 </h2>
             </div>
             <!-- FAQ -->
-            <div class="relative w-full">
+            <div>
                 <div
-                    class="relative z-20 mx-auto w-full max-w-159 rounded-[10px] border border-[#a98270] bg-[#DFBCA6] px-3 pt-3 shadow-[0_2px_4px_rgba(100,70,50,0.12)] sm:px-4.25 sm:pt-5.25">
-                    <!-- FAQ 1 -->
-                    <div
-                        class="faq-item active mb-3 overflow-hidden rounded-2xl bg-white transition-all duration-300 sm:mb-5.25">
-                        <button type="button"
-                            class="faq-question flex w-full items-center gap-4 px-3 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-6.5">
-                            <span
-                                class="flex h-10.5 w-10.5 shrink-0 items-center justify-center rounded-[9px] bg-[#4e8fea] shadow-[0_5px_14px_rgba(78,143,234,0.25)] sm:h-11 sm:w-11">
-                                <svg width="48" height="50" viewBox="0 0 48 50" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M21.9997 0.235928C20.3404 0.591484 18.8589 1.42112 18.3453 2.27052C17.9898 2.86312 17.9108 3.3767 17.7725 6.55698C17.5947 10.6657 17.0219 15.5645 16.291 19.3571C15.5996 22.9522 13.8021 29.9647 13.5453 29.9647C13.5255 29.9647 12.4786 29.4906 11.2539 28.898C8.52795 27.5943 6.90818 27.1399 4.9526 27.1202C3.82667 27.1202 3.29333 27.2189 2.68097 27.535C-0.459802 29.1943 -0.874622 32.6709 1.6143 36.3845C4.97236 41.4018 13.4268 45.9253 23.7182 48.197C30.8097 49.7772 37.6443 49.8365 41.9703 48.3352C44.9333 47.3278 47.1457 45.4908 47.7185 43.5549C48.0938 42.2907 48.0938 41.9352 47.7185 40.7105C46.9284 38.0635 43.8864 36.8783 37.8024 36.8783H34.9381L35.0764 36.0289C35.6492 32.5721 37.1307 28.2659 39.0271 24.5325C40.7258 21.1547 42.2073 18.7645 45.3679 14.32C47.3432 11.5546 47.758 10.8632 47.6 10.5669C47.3432 10.0731 47.0667 10.1126 45.8222 10.8039C44.4987 11.5348 44.3802 11.5348 44.7555 10.8039C46.2173 7.97922 42.1876 4.08782 35.3134 1.73718C34.0295 1.28285 32.0739 0.749512 30.9677 0.512474C28.3405 -0.0208664 23.7578 -0.178894 21.9997 0.235928ZM34.5431 2.52731C35.6295 2.90262 37.032 3.69276 36.6172 3.69276C36.4986 3.69276 35.9258 3.47547 35.3332 3.19892C34.7603 2.94213 33.8122 2.60632 33.2591 2.4878C32.6862 2.34953 32.2122 2.17175 32.2122 2.07298C32.2122 1.8557 33.1011 2.01373 34.5431 2.52731ZM33.1998 2.80386C34.1282 3.10015 35.4122 3.61374 36.0641 3.92979C37.3085 4.5619 38.6122 5.4508 38.474 5.58907C38.4345 5.62858 37.6443 5.31253 36.7357 4.89771C33.8517 3.55448 30.1776 2.50756 28.2813 2.50756C27.8467 2.50756 27.4319 2.40879 27.3529 2.29027C27.0763 1.83595 31.343 2.21126 33.1998 2.80386ZM20.7553 8.05824C23.4022 10.1916 27.3331 11.7916 33.1998 13.1151C35.1554 13.5694 35.9258 13.6484 38.7308 13.6484C41.5752 13.6484 42.1481 13.5892 43.274 13.2138C43.9851 12.9768 44.6172 12.7793 44.6963 12.7793C44.7753 12.7793 43.8271 14.2608 42.6024 16.0781C38.4147 22.2806 36.4986 26.1128 34.9184 31.3474C34.2665 33.54 33.1998 38.7351 33.1998 39.8018C33.1998 40.8685 33.0418 40.9277 30.1973 40.908C24.8244 40.8487 19.9454 39.5055 15.0268 36.6808C14.0589 36.1277 13.2095 35.5943 13.17 35.5153C13.0712 35.3771 14.0984 32.4141 14.2762 32.2165C14.3157 32.177 15.8169 32.8881 17.5947 33.7968C22.138 36.0684 27.6492 37.8067 29.7825 37.6289C30.6122 37.5697 30.4936 37.8265 31.1257 34.4092C31.6591 31.4066 33.1208 27.4362 35.432 22.7745C37.7629 18.0337 37.7826 17.9151 36.2814 17.9151C32.2517 17.9151 26.6812 16.3349 21.8022 13.8262C18.5034 12.1274 18.6219 12.2657 18.7997 10.6657C18.8984 9.9348 18.9577 8.78911 18.9577 8.1175C18.9775 6.73476 19.0762 6.55698 19.5305 7.01131C19.7281 7.18909 20.2614 7.66317 20.7553 8.05824ZM31.185 8.51256C31.5208 8.59158 31.8171 8.7496 31.8171 8.84837C31.8171 9.16442 30.6319 8.80886 28.6171 7.90021C26.8985 7.12983 27.2343 6.99156 29.0121 7.74218C29.8418 8.09774 30.8294 8.4533 31.185 8.51256ZM27.0961 7.93972C29.6442 9.22368 33.7924 10.4089 35.7875 10.4089C36.2418 10.4089 36.5579 10.5076 36.5579 10.6262C36.5579 10.9817 32.7455 10.7052 31.1257 10.2311C29.3479 9.69776 26.4245 8.29528 25.8714 7.72243C25.2788 7.09032 25.4565 7.12983 27.0961 7.93972ZM21.5849 15.1299C24.6862 16.6904 28.3603 18.0337 30.8887 18.5275C32.0739 18.7448 32.2319 18.8435 32.3307 19.2781C32.4887 20.0682 33.1801 21.3917 33.6937 21.8658L34.148 22.3004L33.3579 23.9992C32.1332 26.6659 31.422 28.5029 30.7307 30.7548L30.0788 32.8091L29.1109 33.0264C27.8269 33.3227 26.9973 33.9351 26.543 34.903C26.3454 35.3376 26.0689 35.6931 25.9109 35.6931C24.8639 35.7129 19.1355 33.3425 16.2515 31.6832C14.5725 30.735 14.612 31.0906 15.6787 27.4757C16.5873 24.414 17.6737 19.2979 18.1281 16.0781C18.3256 14.6953 18.4836 13.5694 18.4836 13.5694C18.4836 13.5694 19.8861 14.2608 21.5849 15.1299ZM7.26374 35.9104C12.0045 39.7425 16.4885 42.0339 22.3355 43.5747C26.4837 44.6611 28.0047 44.8587 32.4097 44.8784C36.1826 44.8784 36.5974 44.8389 38.5925 44.3253C41.0221 43.713 41.4962 43.6735 41.4962 44.0685C41.4962 44.4833 39.6987 45.2932 37.4468 45.8858C30.5331 47.7229 17.9503 44.9772 10.3848 39.9993C8.58721 38.8339 4.9526 35.3771 4.9526 34.8437C4.9526 34.2314 5.48594 34.4882 7.26374 35.9104Z"
-                                        fill="white" />
-                                    <path
-                                        d="M22.0789 20.6809C20.0839 21.2735 18.8394 23.6241 19.3727 25.797C19.8271 27.7328 21.6444 29.1748 23.6197 29.1748C27.5111 29.1748 29.3087 24.434 26.4642 21.7278C25.279 20.6019 23.6395 20.2068 22.0789 20.6809ZM24.6666 21.5698C25.0222 21.6685 25.1012 21.8068 25.0222 22.1229C24.9629 22.3599 25.0814 22.7155 25.3185 23.0118C25.516 23.2883 25.6938 23.7229 25.6938 23.9797C25.6938 24.3945 25.6345 24.434 25.2592 24.3352C25.0024 24.2562 24.6469 23.9797 24.4493 23.7229C23.995 23.1303 23.1259 23.071 23.1259 23.6439C23.1259 23.8809 23.3629 24.1575 23.7777 24.355C25.6345 25.3032 25.8518 26.6069 24.2913 27.4168C23.8567 27.634 23.5209 27.9303 23.5209 28.1081C23.5209 28.3254 23.4024 28.3847 23.1259 28.3057C22.9086 28.2464 22.553 28.1279 22.3357 28.0686C22.0394 27.9896 21.9604 27.8513 22.0394 27.5748C22.1184 27.3377 21.9999 27.0019 21.7629 26.6859C21.3481 26.1723 21.2098 25.3229 21.5061 25.1649C21.7629 25.0069 22.5333 25.4019 22.5333 25.718C22.5333 26.0933 23.3827 26.5081 23.7975 26.3501C24.3308 26.1328 24.153 25.8562 23.0271 25.1451C21.7826 24.3352 21.5061 23.7229 22.0394 22.9328C22.2172 22.6365 22.632 22.3204 22.9481 22.2019C23.3036 22.0636 23.5209 21.8266 23.5209 21.6093C23.5209 21.3525 23.6197 21.2735 23.8765 21.3525C24.0543 21.392 24.4296 21.4908 24.6666 21.5698Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                            <span class="flex-1 text-base font-bold leading-[115%]
-                                            text-blue opacity-80 sm:text-xl">
-                                Money Magicians
-                            </span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="overflow-hidden">
-                                <p
-                                    class="ml-18 mr-8 -mt-1.75 mb-4
-                                                max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base sm:leading-150">
-                                    Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
-                                    quisqula
-                                    praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing.
-                                </p>
+                    class="relative w-full bg-[url('/assets/images/png/faq_bg_img.png')] bg-center bg-cover bg-no-repeat">
+                    <div class="relative z-20 mx-auto w-full max-w-159 rounded-[10px] border border-[#a98270]
+                        bg-[#DFBCA6] px-3 pt-3 shadow-[0_2px_4px_rgba(100,70,50,0.12)] sm:px-4.25 sm:pt-5.25 ">
+                        <!-- FAQ 1 -->
+                        <div
+                            class="faq-item active mb-3 overflow-hidden rounded-2xl bg-white transition-all duration-300 sm:mb-5.25">
+                            <button type="button"
+                                class="faq-question flex w-full items-center gap-4 px-3 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-6.5">
+                                <span
+                                    class="flex h-10.5 w-10.5 shrink-0 items-center justify-center rounded-[9px] bg-[#4e8fea] shadow-[0_5px_14px_rgba(78,143,234,0.25)] sm:h-11 sm:w-11">
+                                    <svg width="48" height="50" viewBox="0 0 48 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.9997 0.235928C20.3404 0.591484 18.8589 1.42112 18.3453 2.27052C17.9898 2.86312 17.9108 3.3767 17.7725 6.55698C17.5947 10.6657 17.0219 15.5645 16.291 19.3571C15.5996 22.9522 13.8021 29.9647 13.5453 29.9647C13.5255 29.9647 12.4786 29.4906 11.2539 28.898C8.52795 27.5943 6.90818 27.1399 4.9526 27.1202C3.82667 27.1202 3.29333 27.2189 2.68097 27.535C-0.459802 29.1943 -0.874622 32.6709 1.6143 36.3845C4.97236 41.4018 13.4268 45.9253 23.7182 48.197C30.8097 49.7772 37.6443 49.8365 41.9703 48.3352C44.9333 47.3278 47.1457 45.4908 47.7185 43.5549C48.0938 42.2907 48.0938 41.9352 47.7185 40.7105C46.9284 38.0635 43.8864 36.8783 37.8024 36.8783H34.9381L35.0764 36.0289C35.6492 32.5721 37.1307 28.2659 39.0271 24.5325C40.7258 21.1547 42.2073 18.7645 45.3679 14.32C47.3432 11.5546 47.758 10.8632 47.6 10.5669C47.3432 10.0731 47.0667 10.1126 45.8222 10.8039C44.4987 11.5348 44.3802 11.5348 44.7555 10.8039C46.2173 7.97922 42.1876 4.08782 35.3134 1.73718C34.0295 1.28285 32.0739 0.749512 30.9677 0.512474C28.3405 -0.0208664 23.7578 -0.178894 21.9997 0.235928ZM34.5431 2.52731C35.6295 2.90262 37.032 3.69276 36.6172 3.69276C36.4986 3.69276 35.9258 3.47547 35.3332 3.19892C34.7603 2.94213 33.8122 2.60632 33.2591 2.4878C32.6862 2.34953 32.2122 2.17175 32.2122 2.07298C32.2122 1.8557 33.1011 2.01373 34.5431 2.52731ZM33.1998 2.80386C34.1282 3.10015 35.4122 3.61374 36.0641 3.92979C37.3085 4.5619 38.6122 5.4508 38.474 5.58907C38.4345 5.62858 37.6443 5.31253 36.7357 4.89771C33.8517 3.55448 30.1776 2.50756 28.2813 2.50756C27.8467 2.50756 27.4319 2.40879 27.3529 2.29027C27.0763 1.83595 31.343 2.21126 33.1998 2.80386ZM20.7553 8.05824C23.4022 10.1916 27.3331 11.7916 33.1998 13.1151C35.1554 13.5694 35.9258 13.6484 38.7308 13.6484C41.5752 13.6484 42.1481 13.5892 43.274 13.2138C43.9851 12.9768 44.6172 12.7793 44.6963 12.7793C44.7753 12.7793 43.8271 14.2608 42.6024 16.0781C38.4147 22.2806 36.4986 26.1128 34.9184 31.3474C34.2665 33.54 33.1998 38.7351 33.1998 39.8018C33.1998 40.8685 33.0418 40.9277 30.1973 40.908C24.8244 40.8487 19.9454 39.5055 15.0268 36.6808C14.0589 36.1277 13.2095 35.5943 13.17 35.5153C13.0712 35.3771 14.0984 32.4141 14.2762 32.2165C14.3157 32.177 15.8169 32.8881 17.5947 33.7968C22.138 36.0684 27.6492 37.8067 29.7825 37.6289C30.6122 37.5697 30.4936 37.8265 31.1257 34.4092C31.6591 31.4066 33.1208 27.4362 35.432 22.7745C37.7629 18.0337 37.7826 17.9151 36.2814 17.9151C32.2517 17.9151 26.6812 16.3349 21.8022 13.8262C18.5034 12.1274 18.6219 12.2657 18.7997 10.6657C18.8984 9.9348 18.9577 8.78911 18.9577 8.1175C18.9775 6.73476 19.0762 6.55698 19.5305 7.01131C19.7281 7.18909 20.2614 7.66317 20.7553 8.05824ZM31.185 8.51256C31.5208 8.59158 31.8171 8.7496 31.8171 8.84837C31.8171 9.16442 30.6319 8.80886 28.6171 7.90021C26.8985 7.12983 27.2343 6.99156 29.0121 7.74218C29.8418 8.09774 30.8294 8.4533 31.185 8.51256ZM27.0961 7.93972C29.6442 9.22368 33.7924 10.4089 35.7875 10.4089C36.2418 10.4089 36.5579 10.5076 36.5579 10.6262C36.5579 10.9817 32.7455 10.7052 31.1257 10.2311C29.3479 9.69776 26.4245 8.29528 25.8714 7.72243C25.2788 7.09032 25.4565 7.12983 27.0961 7.93972ZM21.5849 15.1299C24.6862 16.6904 28.3603 18.0337 30.8887 18.5275C32.0739 18.7448 32.2319 18.8435 32.3307 19.2781C32.4887 20.0682 33.1801 21.3917 33.6937 21.8658L34.148 22.3004L33.3579 23.9992C32.1332 26.6659 31.422 28.5029 30.7307 30.7548L30.0788 32.8091L29.1109 33.0264C27.8269 33.3227 26.9973 33.9351 26.543 34.903C26.3454 35.3376 26.0689 35.6931 25.9109 35.6931C24.8639 35.7129 19.1355 33.3425 16.2515 31.6832C14.5725 30.735 14.612 31.0906 15.6787 27.4757C16.5873 24.414 17.6737 19.2979 18.1281 16.0781C18.3256 14.6953 18.4836 13.5694 18.4836 13.5694C18.4836 13.5694 19.8861 14.2608 21.5849 15.1299ZM7.26374 35.9104C12.0045 39.7425 16.4885 42.0339 22.3355 43.5747C26.4837 44.6611 28.0047 44.8587 32.4097 44.8784C36.1826 44.8784 36.5974 44.8389 38.5925 44.3253C41.0221 43.713 41.4962 43.6735 41.4962 44.0685C41.4962 44.4833 39.6987 45.2932 37.4468 45.8858C30.5331 47.7229 17.9503 44.9772 10.3848 39.9993C8.58721 38.8339 4.9526 35.3771 4.9526 34.8437C4.9526 34.2314 5.48594 34.4882 7.26374 35.9104Z"
+                                            fill="white" />
+                                        <path
+                                            d="M22.0789 20.6809C20.0839 21.2735 18.8394 23.6241 19.3727 25.797C19.8271 27.7328 21.6444 29.1748 23.6197 29.1748C27.5111 29.1748 29.3087 24.434 26.4642 21.7278C25.279 20.6019 23.6395 20.2068 22.0789 20.6809ZM24.6666 21.5698C25.0222 21.6685 25.1012 21.8068 25.0222 22.1229C24.9629 22.3599 25.0814 22.7155 25.3185 23.0118C25.516 23.2883 25.6938 23.7229 25.6938 23.9797C25.6938 24.3945 25.6345 24.434 25.2592 24.3352C25.0024 24.2562 24.6469 23.9797 24.4493 23.7229C23.995 23.1303 23.1259 23.071 23.1259 23.6439C23.1259 23.8809 23.3629 24.1575 23.7777 24.355C25.6345 25.3032 25.8518 26.6069 24.2913 27.4168C23.8567 27.634 23.5209 27.9303 23.5209 28.1081C23.5209 28.3254 23.4024 28.3847 23.1259 28.3057C22.9086 28.2464 22.553 28.1279 22.3357 28.0686C22.0394 27.9896 21.9604 27.8513 22.0394 27.5748C22.1184 27.3377 21.9999 27.0019 21.7629 26.6859C21.3481 26.1723 21.2098 25.3229 21.5061 25.1649C21.7629 25.0069 22.5333 25.4019 22.5333 25.718C22.5333 26.0933 23.3827 26.5081 23.7975 26.3501C24.3308 26.1328 24.153 25.8562 23.0271 25.1451C21.7826 24.3352 21.5061 23.7229 22.0394 22.9328C22.2172 22.6365 22.632 22.3204 22.9481 22.2019C23.3036 22.0636 23.5209 21.8266 23.5209 21.6093C23.5209 21.3525 23.6197 21.2735 23.8765 21.3525C24.0543 21.392 24.4296 21.4908 24.6666 21.5698Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span class="flex-1 text-base font-bold leading-[115%]
+                                                text-blue opacity-80 sm:text-xl">
+                                    Money Magicians
+                                </span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="overflow-hidden">
+                                    <p
+                                        class="ml-18 mr-8 -mt-1.75 mb-4
+                                                    max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base sm:leading-150">
+                                        Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
+                                        quisqula
+                                        praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
+                                        transition-all duration-300 sm:mb-5.25">
+                            <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
+                                        px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.5">
+                                <span class="flex shrink-0 sm:w-11">
+                                    <img src="./assets/images/svg/fortune.svg" alt="Fortune Finders"
+                                        class="h-7 w-7 object-contain sm:h-12 sm:w-11">
+                                </span>
+                                <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
+                                    Fortune Finders
+                                </span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="overflow-hidden">
+                                    <p
+                                        class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
+                                        Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
+                                        crasigula
+                                        praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
+                                        dictum.
+                                        Risus id tellus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
+                                        transition-all duration-300 sm:mb-5.25">
+                            <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
+                                        px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
+                                <span class="flex shrink-0 sm:w-11">
+                                    <img src="./assets/images/svg/investment.svg" alt="Investment Innovators"
+                                        class="h-7 w-7 object-contain sm:h-12 sm:w-11">
+                                </span>
+                                <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
+                                    Investment Innovators
+                                </span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="overflow-hidden">
+                                    <p
+                                        class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
+                                        Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
+                                        crasigula
+                                        praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
+                                        dictum.
+                                        Risus id tellus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
+                                        transition-all duration-300 sm:mb-5.25">
+                            <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
+                                        px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
+                                <span class="flex shrink-0 sm:w-11">
+                                    <img src="./assets/images/svg/profit.svg" alt="Profit Prophets"
+                                        class="h-7 w-7 object-contain sm:h-12 sm:w-11">
+                                </span>
+                                <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
+                                    Profit Prophets
+                                </span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="overflow-hidden">
+                                    <p
+                                        class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
+                                        Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
+                                        crasigula
+                                        praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
+                                        dictum.
+                                        Risus id tellus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 5 -->
+                        <img src="" alt="">
+                        <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
+                                        transition-all duration-300 sm:mb-5.25">
+                            <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
+                                        px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
+                                <span class="flex shrink-0 sm:w-11">
+                                    <img src="./assets/images/svg/risk.svg" alt="Risk Reapers"
+                                        class="h-7.75 w-7.75 object-contain sm:h-12 sm:w-11">
+                                </span>
+                                <span class="flex-1 text-base font-bold leading-[115%]
+                                                text-blue opacity-80 sm:text-xl">
+                                    Risk Reapers
+                                </span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="overflow-hidden">
+                                    <p
+                                        class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
+                                        Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
+                                        crasigula
+                                        praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
+                                        dictum.
+                                        Risus id tellus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 6 -->
+                        <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
+                                        transition-all duration-300 sm:mb-5.25">
+                            <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
+                                        px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
+                                <span class="flex shrink-0 sm:w-11">
+                                    <img src="./assets/images/svg/kesolute.svg" alt="Kesolute Investment Managers"
+                                        class="h-7 w-7.5 object-contain sm:h-12 sm:w-11">
+                                </span>
+                                <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
+                                    Kesolute Investment Managers
+                                </span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="overflow-hidden">
+                                    <p
+                                        class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
+                                        Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
+                                        crasigula
+                                        praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
+                                        dictum.
+                                        Risus id tellus.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- FAQ 2 -->
-                    <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
-                                    transition-all duration-300 sm:mb-5.25">
-                        <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
-                                    px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.5">
-                            <span class="flex shrink-0 sm:w-11">
-                                <img src="./assets/images/svg/fortune.svg" alt="Fortune Finders"
-                                    class="h-7 w-7 object-contain sm:h-12 sm:w-11">
-                            </span>
-                            <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
-                                Fortune Finders
-                            </span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="overflow-hidden">
-                                <p
-                                    class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
-                                    Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
-                                    crasigula
-                                    praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
-                                    dictum.
-                                    Risus id tellus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FAQ 3 -->
-                    <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
-                                    transition-all duration-300 sm:mb-5.25">
-                        <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
-                                    px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
-                            <span class="flex shrink-0 sm:w-11">
-                                <img src="./assets/images/svg/investment.svg" alt="Investment Innovators"
-                                    class="h-7 w-7 object-contain sm:h-12 sm:w-11">
-                            </span>
-                            <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
-                                Investment Innovators
-                            </span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="overflow-hidden">
-                                <p
-                                    class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
-                                    Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
-                                    crasigula
-                                    praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
-                                    dictum.
-                                    Risus id tellus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FAQ 4 -->
-                    <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
-                                    transition-all duration-300 sm:mb-5.25">
-                        <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
-                                    px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
-                            <span class="flex shrink-0 sm:w-11">
-                                <img src="./assets/images/svg/profit.svg" alt="Profit Prophets"
-                                    class="h-7 w-7 object-contain sm:h-12 sm:w-11">
-                            </span>
-                            <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
-                                Profit Prophets
-                            </span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="overflow-hidden">
-                                <p
-                                    class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
-                                    Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
-                                    crasigula
-                                    praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
-                                    dictum.
-                                    Risus id tellus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FAQ 5 -->
-                    <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
-                                    transition-all duration-300 sm:mb-5.25">
-                        <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
-                                    px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
-                            <span class="flex shrink-0 sm:w-11">
-                                <img src="./assets/images/svg/risk.svg" alt="Risk Reapers"
-                                    class="h-7.75 w-7.75 object-contain sm:h-12 sm:w-11">
-                            </span>
-                            <span class="flex-1 text-base font-bold leading-[115%]
-                                            text-blue opacity-80 sm:text-xl">
-                                Risk Reapers
-                            </span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="overflow-hidden">
-                                <p
-                                    class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
-                                    Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
-                                    crasigula
-                                    praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
-                                    dictum.
-                                    Risus id tellus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FAQ 6 -->
-                    <div class="faq-item mb-3 overflow-hidden rounded-full bg-white
-                                    transition-all duration-300 sm:mb-5.25">
-                        <button type="button" class="faq-question flex min-h-15.75 w-full items-center gap-4
-                                    px-4 py-3 text-left sm:gap-8.75 sm:px-4.25 sm:py-5.25">
-                            <span class="flex shrink-0 sm:w-11">
-                                <img src="./assets/images/svg/kesolute.svg" alt="Kesolute Investment Managers"
-                                    class="h-7 w-7.5 object-contain sm:h-12 sm:w-11">
-                            </span>
-                            <span class="flex-1 text-base font-bold leading-[115%] text-blue opacity-80 sm:text-xl">
-                                Kesolute Investment Managers
-                            </span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="overflow-hidden">
-                                <p
-                                    class="ml-13.75 mr-8 -mt-1.75 mb-4 max-w-104.75 text-[9px] leading-[163%] text-blue opacity-70 sm:ml-23.75 sm:mr-0 sm:mb-7.75 sm:text-base">
-                                    Pulvinar scelerisque viverra at donec nunc orci ullam corporis penatibus
-                                    crasigula
-                                    praesent dictum fames suscipit nam. Fermentum praesent vel adipiscing eget
-                                    dictum.
-                                    Risus id tellus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- FAQ BACKGROUND -->
-                <div
-                    class="absolute left-1/2 top-0 -z-10 h-217.5 w-376.75 -translate-x-1/2 bg-[url('./assets/images/png/faq-bg.png')] bg-cover bg-center bg-no-repeat sm:left-[40%]">
                 </div>
             </div>
         </div>
@@ -495,15 +498,17 @@
             <img src="assets/images/png/left-img.png" alt="left-shadow" class="absolute top-29 max-xl:hidden">
             <img src="assets/images/png/right-img.png" alt="right-img" class="absolute top-29 right-0 max-xl:hidden">
             <div
-                class="max-w-296 mx-auto px-5 bg-brown py-11.25 pl-7 pr-1.25 max-sm:px-5 max-sm:pt-9.75 rounded-2xl flex gap-13 max-xl:flex-wrap-reverse">
-                <div data-aos="zoom-in" data-aos-duration="500" class="pl-[16.31px] pb-[19.52px] max-sm:p-0 max-xl:mx-auto">
+                class="max-w-296 mx-auto px-5 bg-brown py-11.25 pl-7 pr-1.25 max-sm:px-5 max-sm:pt-9.75 rounded-2xl flex gap-13 max-sm:gap-15.25 max-xl:flex-wrap-reverse">
+                <div data-aos="zoom-in" data-aos-duration="500"
+                    class="pl-[16.31px] pb-[19.52px] max-sm:p-0 max-xl:mx-auto">
                     <img width="486.69" height="500" src="assets/images/png/capital.png" alt="capital">
                 </div>
-                <div  data-aos="zoom-in-left" data-aos-duration="500"
+                <div data-aos="zoom-in-left" data-aos-duration="500"
                     class="pt-11.25 pb-[45.56px] pr-4 max-sm:p-0 max-w-135 max-xl:mx-auto max-lg:text-center max-lg:max-w-175">
                     <h1
                         class="font-light max-sm:max-w-83.75 text-white pb-3 max-sm:pb-3.75 italic text-[64px] leading-130 max-sm:text-4xl max-sm:text-left max-sm:leading-130">
-                        Institutional <span class="font-bold">Asset Allocation in</span> Crypto</h1>
+                        Institutional <span class="font-bold not-italic capitalize">Asset Allocation in</span> Crypto
+                    </h1>
                     <p
                         class="font-normal pb-6.25 max-sm:pb-7.25 text-base leading-150 text-bright-brown max-w-122.5 max-lg:mx-auto max-sm:text-left">
                         Pulvinar
@@ -523,8 +528,8 @@
         </div>
     </section>
     <section>
-        <div class="pb-39.5 max-sm:pb-24.25">
-            <div class="max-w-183.75 mx-auto text-center pb-23.25 max-sm:pb-17.5">
+        <div class="pb-39.5 max-sm:pb-24">
+            <div class="max-w-183.75 mx-auto text-center pb-20.25 max-sm:pb-0">
                 <h1
                     class="font-light italic text-[64px] max-sm:text-4xl max-sm:max-w-83.5 max-sm:mx-auto max-sm:leading-130 leading-130 text-more-brown pb-3.75 max-sm:pb-3.25">
                     Let's Together <span class="font-bold">Make The Crypto World</span> Great!</h1>
@@ -534,8 +539,9 @@
                     Sit Orci Enim. Fames In Eget Neque Vitae Iaculis Diam. Malesuada Adipiscing Integer Tempor Natoque
                     Accumsan Et.</p>
             </div>
-            <div class="bg-[url('assets/images/png/bg-image.png')]">
-                <div class="px-5">
+            <div
+                class="sm:bg-[url('/assets/images/png/last_bg.png')] bg-[url('/assets/images/png/teer.png')]  bg-position-[center_45px] sm:bg-cover bg-contain bg-no-repeat max-sm:pt-17.5">
+                <div class="px-5 pt-3">
                     <div
                         class="max-w-209.5 max-sm:max-w-91.25 bg-white mx-auto border-[3px] border-brown max-sm:border-none max-sm:bg-transparent rounded-2xl py-8.5 px-10.25 max-sm:p-0 max-sm:mx-auto grid grid-cols-2 gap-x-6.25 gap-y-8.75 max-sm:gap-y-6.75 max-md:grid-cols-1 max-md:mx-auto max-md:max-w-115">
                         <div
@@ -599,11 +605,12 @@
     </section>
     <footer class="bg-no-repeat bg-[url('/assets/images/svg/footer.webp')] bg-center bg-cover">
         <div class="max-w-full ">
-            <div class="max-w-136.75 px-5 mx-auto pt-15 pb-12.5 max-sm:pt-16.75 max-sm:pb-18">
+            <div class="max-w-136.75 px-5 mx-auto pt-15 pb-12.5 max-sm:pt-16.5 max-sm:pb-18">
                 <div class="pb-6.25 max-sm:pb-8.5">
-                    <a href="#">
-                        <img width="254" height="61" src="assets/images/png/ZenPeack-Capital.png" alt="zen peak"
-                            class="flex mx-auto mb-4 max-sm:mb-7.25"></a>
+                    <a class="h-15.25" href="#">
+                        <img class="flex mx-auto mb-4 max-sm:mb-7.25 h-15.25" width="254" height="61"
+                            src="assets/images/png/ZenPeack-Capital.png" alt="zen peak" style="height: 61px;">
+                    </a>
                     <p class="max-w-100.25 text-center text-[#C1C1C1] mx-auto text-base leading-150 font-normal">
                         Pulvinar scelerisque viverra at donec nunc orci ullam corper penatibus crasigula.</p>
                 </div>
@@ -625,9 +632,9 @@
                             src="assets/images/svg/twitter.svg" alt="twitter" class="hover:scale-110 duration-300"></a>
                 </div>
             </div>
-            <div class="max-w-360 border-t-2 border-[#474747] bg-center bg-cover ">
-                <div
-                    class="px-37.5 py-4.5 flex justify-between max-md:flex-wrap text-[#979797] max-sm:max-w-125 max-sm:mx-auto max-sm:justify-center max-sm:px-5 max-sm:py-3 max-sm:gap-2.25">
+            <div class="max-w-360 sm:border-t-2 border-white/10 bg-center bg-cover ">
+                <div class="px-37.5 py-4.5 flex justify-between max-md:flex-wrap text-[#979797] max-sm:max-w-125 max-sm:mx-auto max-sm:justify-center max-sm:px-5 max-sm:gap-2.25 max-sm:py-2.75 leading-5.25"
+                    style="padding-bottom: 11px;">
                     <p>Privacy Policy | Conditions</p>
                     <p>ZenPeak | Copyright©2024</p>
                 </div>

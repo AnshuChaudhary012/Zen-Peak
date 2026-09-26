@@ -46,7 +46,7 @@
                 // Open clicked FAQ if it was closed
                 if (!isActive) {
 
-                    item.classList.add("active", "rounded-[16px]");
+                    item.classList.add("active", "rounded-2xl");
                     item.classList.remove("rounded-full");
 
                     content.style.maxHeight = content.scrollHeight + "px";
