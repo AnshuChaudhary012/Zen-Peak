@@ -1,55 +1,74 @@
-        const faqItems = document.querySelectorAll(".faq-item");
+const items = document.querySelectorAll(".item");
 
-        // Set initial state
-        faqItems.forEach((item, index) => {
-            const content = item.querySelector(".faq-content");
+items.forEach((item) => {
 
-            content.style.overflow = "hidden";
-            content.style.transition = "max-height 300ms ease";
+  const button = item.querySelector(".accordion-btn");
+  const description = item.querySelector(".description");
+  const heading = item.querySelector(".heading");
+  const image = item.querySelector(".icon");
 
-            if (index === 0) {
-                // First FAQ open by default
-                item.classList.add("active", "rounded-2xl");
-                item.classList.remove("rounded-full");
+  button.addEventListener("click", () => {
 
-                content.style.maxHeight = content.scrollHeight + "px";
-            } else {
-                // All other FAQs closed
-                item.classList.remove("active", "rounded-[16px]");
-                item.classList.add("rounded-full");
+    // Close all other items
+    items.forEach((otherItem) => {
 
-                content.style.maxHeight = "0px";
-            }
-        });
+      if (otherItem !== item) {
 
-        // FAQ click
-        faqItems.forEach((item) => {
+        otherItem.classList.remove("rounded-[14px]");
+        otherItem.classList.add("rounded-full");
 
-            const button = item.querySelector(".faq-question");
-            const content = item.querySelector(".faq-content");
+        otherItem.querySelector(".description")
+          .classList.add("hidden");
 
-            button.addEventListener("click", () => {
+        otherItem.querySelector(".heading")
+          .classList.remove("text-lg");
 
-                const isActive = item.classList.contains("active");
+        otherItem.querySelector(".heading")
+          .classList.add("text-base");
 
-                // Close all FAQs
-                faqItems.forEach((faq) => {
+        otherItem.querySelector(".icon")
+          .classList.remove("h-12", "w-12");
 
-                    const faqContent = faq.querySelector(".faq-content");
+        otherItem.querySelector(".icon")
+          .classList.add("h-8", "w-8");
+      }
+    });
 
-                    faq.classList.remove("active", "rounded-[16px]");
-                    faq.classList.add("rounded-full");
 
-                    faqContent.style.maxHeight = "0px";
-                });
+    // Check current item
+    const isOpen = !description.classList.contains("hidden");
 
-                // Open clicked FAQ if it was closed
-                if (!isActive) {
 
-                    item.classList.add("active", "rounded-2xl");
-                    item.classList.remove("rounded-full");
+    if (isOpen) {
 
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        });
+      // CLOSE
+      description.classList.add("hidden");
+
+      item.classList.remove("rounded-[14px]");
+      item.classList.add("rounded-full");
+
+      heading.classList.remove("text-lg");
+      heading.classList.add("text-base");
+
+      image.classList.remove("h-12", "w-12");
+      image.classList.add("h-8", "w-8");
+
+    } else {
+
+      // OPEN
+      description.classList.remove("hidden");
+
+      item.classList.remove("rounded-full");
+      item.classList.add("rounded-[14px]");
+
+      heading.classList.remove("text-base");
+      heading.classList.add("text-lg");
+
+      image.classList.remove("h-8", "w-8");
+      image.classList.add("h-12", "w-12");
+
+    }
+
+  });
+
+});
