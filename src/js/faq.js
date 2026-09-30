@@ -33,28 +33,18 @@ items.forEach((item) => {
           .classList.add("h-8", "w-8");
       }
     });
-
-
     // Check current item
     const isOpen = !description.classList.contains("hidden");
-
-
     if (isOpen) {
-
       // CLOSE
       description.classList.add("hidden");
-
       item.classList.remove("rounded-[14px]");
       item.classList.add("rounded-full");
-
       heading.classList.remove("text-lg");
       heading.classList.add("text-base");
-
       image.classList.remove("h-12", "w-12");
       image.classList.add("h-8", "w-8");
-
     } else {
-
       // OPEN
       description.classList.remove("hidden");
 
