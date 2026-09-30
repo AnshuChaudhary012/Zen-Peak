@@ -6,16 +6,16 @@
 
 ## Description
 
-Write your project description here.
+Zen-Peak layout 
 
 ## Technologies
 
 - HTML
-- Tailwind CSS
+- Tailwind CSS (CLI)
 - JavaScript
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- faq
+- animation
+- swiper
