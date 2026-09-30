@@ -1586,6 +1586,10 @@
     .md\:mb-20 {
       margin-bottom: calc(var(--spacing) * 20);
     }
+    .md\:duration-1000 {
+      --tw-duration: 1000ms;
+      transition-duration: 1000ms;
+    }
   }
   @media (width >= 64rem) {
     .lg\:mb-0 {
