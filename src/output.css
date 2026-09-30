@@ -1471,11 +1471,17 @@
     .max-sm\:pb-18\.75 {
       padding-bottom: calc(var(--spacing) * 18.75);
     }
+    .max-sm\:pb-19\.5 {
+      padding-bottom: calc(var(--spacing) * 19.5);
+    }
     .max-sm\:pb-24 {
       padding-bottom: calc(var(--spacing) * 24);
     }
     .max-sm\:pb-24\.25 {
       padding-bottom: calc(var(--spacing) * 24.25);
+    }
+    .max-sm\:pb-\[78px\] {
+      padding-bottom: 78px;
     }
     .max-sm\:pl-3\.5 {
       padding-left: calc(var(--spacing) * 3.5);
