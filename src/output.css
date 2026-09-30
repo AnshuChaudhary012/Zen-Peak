@@ -329,6 +329,9 @@
   .my-auto {
     margin-block: auto;
   }
+  .ms-2 {
+    margin-inline-start: calc(var(--spacing) * 2);
+  }
   .mt-1 {
     margin-top: var(--spacing);
   }
@@ -1461,11 +1464,17 @@
     .max-sm\:my-18\.5 {
       margin-block: calc(var(--spacing) * 18.5);
     }
+    .max-sm\:mt-0 {
+      margin-top: 0px;
+    }
     .max-sm\:mt-10\.25 {
       margin-top: calc(var(--spacing) * 10.25);
     }
     .max-sm\:mt-\[4\.5px\] {
       margin-top: 4.5px;
+    }
+    .max-sm\:mt-px {
+      margin-top: 1px;
     }
     .max-sm\:mb-0 {
       margin-bottom: 0px;
@@ -1529,6 +1538,9 @@
     .max-sm\:w-83\.5 {
       width: calc(var(--spacing) * 83.5);
     }
+    .max-sm\:w-83\.25 {
+      width: calc(var(--spacing) * 83.25);
+    }
     .max-sm\:max-w-5\.75 {
       max-width: calc(var(--spacing) * 5.75);
     }
@@ -1591,6 +1603,9 @@
     }
     .max-sm\:gap-3\.75 {
       gap: calc(var(--spacing) * 3.75);
+    }
+    .max-sm\:gap-4\.5 {
+      gap: calc(var(--spacing) * 4.5);
     }
     .max-sm\:gap-10 {
       gap: calc(var(--spacing) * 10);
