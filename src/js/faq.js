@@ -1,64 +1,49 @@
-const items = document.querySelectorAll(".item");
+       const faqItems = document.querySelectorAll(".faq-item");
 
-items.forEach((item) => {
+        faqItems.forEach((faq) => {
+            const summary = faq.querySelector("summary");
+            const content = faq.querySelector(".faq-content");
 
-  const button = item.querySelector(".accordion-btn");
-  const description = item.querySelector(".description");
-  const heading = item.querySelector(".heading");
-  const image = item.querySelector(".icon");
+            summary.addEventListener("click", (e) => {
+                e.preventDefault();
 
-  button.addEventListener("click", () => {
+                if (faq.open) {
 
-    // Close all other items
-    items.forEach((otherItem) => {
+                    content.style.maxHeight = content.scrollHeight + "px";
 
-      if (otherItem !== item) {
 
-        otherItem.classList.remove("rounded-[14px]");
-        otherItem.classList.add("rounded-full");
+                    content.offsetHeight;
 
-        otherItem.querySelector(".description")
-          .classList.add("hidden");
 
-        otherItem.querySelector(".heading")
-          .classList.remove("text-lg");
+                    requestAnimationFrame(() => {
+                        content.style.maxHeight = "0px";
+                    });
 
-        otherItem.querySelector(".heading")
-          .classList.add("text-base");
+                    content.addEventListener(
+                        "transitionend",
+                        () => {
+                            faq.open = false;
+                        },
+                        { once: true }
+                    );
 
-        otherItem.querySelector(".icon")
-          .classList.remove("h-12", "w-12");
+                }
 
-        otherItem.querySelector(".icon")
-          .classList.add("h-8", "w-8");
-      }
-    });
-    // Check current item
-    const isOpen = !description.classList.contains("hidden");
-    if (isOpen) {
-      // CLOSE
-      description.classList.add("hidden");
-      item.classList.remove("rounded-[14px]");
-      item.classList.add("rounded-full");
-      heading.classList.remove("text-lg");
-      heading.classList.add("text-base");
-      image.classList.remove("h-12", "w-12");
-      image.classList.add("h-8", "w-8");
-    } else {
-      // OPEN
-      description.classList.remove("hidden");
+                else {
+                    faq.open = true;
+                    content.style.maxHeight = "0px";
+                    requestAnimationFrame(() => {
+                        content.style.maxHeight =
+                            content.scrollHeight + "px";
+                    });
+                }
+            });
+        });
 
-      item.classList.remove("rounded-full");
-      item.classList.add("rounded-[14px]");
+        faqItems.forEach((faq) => {
+            const content = faq.querySelector(".faq-content");
 
-      heading.classList.remove("text-base");
-      heading.classList.add("text-lg");
-
-      image.classList.remove("h-8", "w-8");
-      image.classList.add("h-12", "w-12");
-
-    }
-
-  });
-
-});
+            if (faq.open) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });

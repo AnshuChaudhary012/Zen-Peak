@@ -1,105 +1,39 @@
-const sliderLeftBtn = document.querySelector("#left-button");
-const sliderRightBtn = document.querySelector("#right-button");
+ var swiper = new Swiper('.mySwiper', {
+    // slidesPerView: 3,
+    spaceBetween: 28,
+    // centeredSlides: true,
 
-const cardsSwiper = new Swiper(".cards-swiper", {
-  slidesPerView: "auto",
-  centeredSlides: true,
-  spaceBetween: 28,
-  enabled: true,
-  speed: 500,
+    loop: true,
 
-  rewind: true,
-
-  breakpoints: {
-    769: {
-      enabled: true,
-      slidesPerView: "auto",
-      centeredSlides: false,
-      spaceBetween: 28,
+    navigation: {
+        nextEl: '.btn-right',
+        prevEl: '.btn-left',
     },
-    1230: {
-      enabled: false,
-      slidesPerView: "auto",
-      centeredSlides: false,
-      spaceBetween: 28,
-    },
-  },
 
-  on: {
-    breakpoint(swiper) {
-      if (!swiper.enabled) {
-        swiper.wrapperEl.style.transform = "translate3d(0,0,0)";
-      }
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 28,
+        },
     },
-  },
 });
 
-function showTemporaryOpacity(button) {
-  if (!button) return;
+         const showBios = document.querySelectorAll(".showBio");
 
-  button.classList.add("opacity-30");
+        showBios.forEach((showBio) => {
+            showBio.addEventListener("click", () => {
 
-  setTimeout(() => {
-    button.classList.remove("opacity-30");
-  }, 300);
-}
+                const bioCard = showBio
+                    .closest(".swiper-slide")
+                    .querySelector(".bioCard");
 
-function moveRight() {
-  if (!cardsSwiper.enabled) return;
+                bioCard.classList.toggle("top-[-120%]");
+                bioCard.classList.toggle("top-0");
 
-  cardsSwiper.slideNext();
-
-  showTemporaryOpacity(sliderRightBtn);
-  sliderLeftBtn?.classList.remove("opacity-30");
-}
-
-function moveLeft() {
-  if (!cardsSwiper.enabled) return;
-
-  cardsSwiper.slidePrev();
-
-  showTemporaryOpacity(sliderLeftBtn);
-  sliderRightBtn?.classList.remove("opacity-30");
-}
-
-window.moveRight = moveRight;
-window.moveLeft = moveLeft;
-
-// show bio and hide bio
-
-const cards = document.querySelectorAll(".card");
-
-cards.forEach((card) => {
-  const showBtn = card.querySelector(".show-btn");
-  const bio = card.querySelector(".bio");
-  const bioText = card.querySelector(".text-bio");
-  const verticalIcon = card.querySelector(".plus-vertical");
-
-  showBtn.addEventListener("click", () => {
-    const isOpen = bio.classList.contains("visible");
-
-    bio.classList.toggle("top-0");
-    bio.classList.toggle("top-full");
-
-    bio.classList.toggle("opacity-100");
-    bio.classList.toggle("opacity-0");
-
-    bio.classList.toggle("visible");
-    bio.classList.toggle("invisible");
-
-    bio.classList.toggle("translate-y-0");
-    bio.classList.toggle("translate-y-5");
-
-    bioText.textContent = !isOpen ? "HIDE BIO" : "SHOW BIO";
-
-    verticalIcon.classList.toggle("opacity-0", !isOpen);
-
-    if (!isOpen) {
-      showBtn.classList.remove("border", "border-transparent");
-      showBtn.classList.add("border", "border-white");
-    } else {
-      showBtn.classList.remove("border", "border-white");
-      showBtn.classList.add("border", "border-transparent");
-    }
-  });
-});
+            });
+        });
